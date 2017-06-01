@@ -1,0 +1,61 @@
+# Simple Calculator
+![Simple Calculator by Maruf Sarker](img/simple-calculator.png)
+
+#### This is a General Simple Calculator.
+
+It supports basic arithmetic functionalities, like -
+
+- **Addition (+)**
+- **Subtraction (-)**
+- **Multiplication (x)**
+- **Division (÷)**, and also allows to work with
+- **Percentage (%) of Previous Value**
+
+- - -
+
+### +
+This allows to add one value with previous another value.
+- - -
+  2 + 3
+    = 5
+
+### -
+This allows to subtract one value from previous another value.
+- - -
+  2 - 3
+    = -1
+
+### x
+This allows to multiply one value with previous another value.
+- - -
+  2 x 3
+    = 6
+
+### ÷
+This allows to divide previous value by new value.
+- - -
+  2 ÷ 3
+    = 0.66
+
+### %
+This calculates the percentage of new value and, then act upon the previous value according to the arithmetic sign.
+- - -
+    2 + 3 %
+    = 2 + (2 x (3/100))
+    = 2 + 0.06
+    = 2.06
+- - -
+  2 - 3 %
+    = 2 - (2 x (3/100))
+    = 2 - 0.06
+    = 1.94
+- - -
+  2 x 3 %
+    = 2 x (2 x (3/100))
+    = 2 x 0.06
+    = 0.12
+- - -
+  2 ÷ 3 %
+    = 2 ÷ (2 x (3/100))
+    = 2 ÷ 0.06
+    = 33.33

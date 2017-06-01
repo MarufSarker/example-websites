@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="author" href="humans.txt">
+
+	<title>Calculator | Maruf Sarker</title>
+
+	<!-- Google Analytics - Starts -->
+	<script type="text/javascript">
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-73363148-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- Google Analytics - Ends -->
+
+	<!-- libraries -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!-- Custom Style-sheet and Script -->
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="fullBody" class="container">
+		<div id="frontBody">
+			<div id="topDisplay" class="text-center">
+				<p id="title" class="h2">General Calculator</p>
+				<input id="display" type="text" disabled="disabled"></input>
+			</div>
+			<div id="buttonContainer">
+				<div id="AC" value="AC" class="btn btn-danger btn-sm">AC</div>
+				<div id="CE" value="CE" class="btn btn-danger btn-sm">CE</div>
+				<div id="percent" value="percent" class="btn btn-info btn-sm">%</div>
+				<div id="divide" value="/" class="btn btn-info btn-sm">÷</div>
+				<div id="seven" value="7" class="btn btn-default btn-sm">7</div>
+				<div id="eight" value="8" class="btn btn-default btn-sm">8</div>
+				<div id="nine" value="9" class="btn btn-default btn-sm">9</div>
+				<div id="multiply" value="*" class="btn btn-info btn-sm">x</div>
+				<div id="four" value="4" class="btn btn-default btn-sm">4</div>
+				<div id="five" value="5" class="btn btn-default btn-sm">5</div>
+				<div id="six" value="6" class="btn btn-default btn-sm">6</div>
+				<div id="minus" value="-" class="btn btn-info btn-sm">-</div>
+				<div id="one" value="1" class="btn btn-default btn-sm">1</div>
+				<div id="two" value="2" class="btn btn-default btn-sm">2</div>
+				<div id="three" value="3" class="btn btn-default btn-sm">3</div>
+				<div id="plus" value="+" class="btn btn-info btn-sm">+</div>
+				<div id="zero" value="0" class="btn btn-default btn-sm">0</div>
+				<div id="point" value="." class="btn btn-default btn-sm">.</div>
+				<div id="equal" value="=" class="btn btn-success btn-sm">=</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="farBackScreen"></div>
+	<div id="backScreen">
+		<div id="c1"></div>
+		<div id="c2"></div>
+		<div id="c3"></div>
+		<div id="c4"></div>
+		<div id="c5"></div>
+		<div id="c6"></div>
+		<div id="c7"></div>
+		<div id="c8"></div>
+		<div id="c9"></div>
+		<div id="c10"></div>
+	</div>
+
+	<div id="creator">
+		<div id="creatorID">Created by: <a href="https://github.com/MarufSarker/" target="_blank">Abu Md. Maruf Sarker</a></div>
+	</div>
+</body>
+</html>
