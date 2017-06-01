@@ -1,0 +1,43 @@
+[placeholder]:focus::-webkit-input-placeholder {
+  transition: opacity 0.5s 0.5s ease;
+  opacity: 0.5;
+}
+
+.result {
+  backgroud-color: #fff;
+  border: 1px solid #fff;
+  margin: 8px;
+  box-shadow: 1px 1px 2px #2D2D2D;
+  text-shadow: 0px 0px 0px #2D2D2D;
+}
+.img-thumbnail {
+  margin: 5px 10px 3px -10px;
+}
+.ratingsCount {
+  margin-top: -10px;
+}
+.resultPhone {
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+.resultLocation {
+  margin-bottom: 2px;
+  font-weight: bold;
+}
+
+.footer-holder {
+  margin: 50px auto auto auto;
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  /*background: #fff;*/
+  color: #000;
+  text-align: center;
+  bottom: 0px;
+}
+
+.dev-prof, .dev-prof a {
+  font-weight: bold;
+  text-shadow: 0px 0px 0px #2D2D2D;
+  padding-top: 15px;
+}
