@@ -1,0 +1,7 @@
+# Camper News (FreeCodeCamp)
+
+#### Camper News is an API based Post Display Page
+
+API is provided from FreeCodeCamp.com (http://www.freecodecamp.com/news/hot). FreeCodeCamp is an Open Source Web Development learning society.
+
+In this page all recent posts are displayed according to their order as provided. Also the Posting Time, Up-votes given by the Viewers are displayed.
