@@ -1,0 +1,7 @@
+| Random Quote Generator |
+:------------------------:
+
+This is a simple Random Quote Generator,
+depending on the API provided by http://forismatic.com/en/
+
+You can also Tweet current quote via Twitter share button.
