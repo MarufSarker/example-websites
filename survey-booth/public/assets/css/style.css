@@ -1,0 +1,67 @@
+.line-break {
+  box-shadow: 1px 1px 2px #2D2D2D;
+  width: 95%;
+  height: 1px;
+  margin: 15px auto;
+}
+
+.line-break-invisible {
+  box-shadow: 1px 1px 2px #fff;
+  width: 95%;
+  height: 1px;
+  margin: 10px auto;
+}
+
+.surveyOption {
+  margin: 0 auto;
+  width: 80%;
+  margin-top: 5px;
+}
+
+.surveyOptionControl {
+  margin: 10px auto;
+}
+
+.graphContainer {
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.graphHolder {
+  height: 250px;
+  margin-left: -10px;
+  margin-bottom: 0px;
+  margin-right: 5px;
+}
+
+.graphFooter {
+  margin-top: 20px;
+}
+
+.jt-bg {
+  background-image: url("https://c1.staticflickr.com/1/538/20260886321_06da1fce55_b.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 1px 1px 2px #2D2D2D;
+  text-shadow: 0px 0px 0px #2D2D2D;
+
+}
+
+.footer-holder {
+  margin: 50px auto auto auto;
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  color: #000;
+  text-align: center;
+  bottom: 0px;
+}
+
+.dev-prof, .dev-prof a {
+  font-weight: bold;
+  text-shadow: 0px 0px 0px #2D2D2D;
+  padding-top: 15px;
+}
