@@ -1,0 +1,9 @@
+# API Microservices
+
+API Microservices are collection of some API services all-together.
+
+- Timestamp Microservice
+- Request Header Parser Microservice
+- URL Shortener Microservice
+- Image Search Abstraction Layer
+- File Metadata Microservice

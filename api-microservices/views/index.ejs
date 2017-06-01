@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>API Microservices</title>
+
+  <!--favicon-->
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
+  <meta name="application-name" content="&nbsp;"/>
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+
+    <!--bootstrap-->
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  
+  <header>
+    <div>
+      <div class="headerTitle h1 text-center">API MicroServices</div>
+    </div>
+  </header>
+  
+  <div class="container">
+    <select class="form-control input-lg dropdownMain">
+      <option value="none">Select API Method</option>
+      <option value="item1">Timestamp Microservice</option>
+      <option value="item2">Request Header Parser Microservice</option>
+      <option value="item3">URL Shortener Microservice</option>
+      <option value="item4">Image Search Abstraction Layer</option>
+      <option value="item5">File Metadata Microservice</option>
+    </select>
+  </div>
+  
+  <div class="container allHolder">
+    <!-- Timestamp Microservice -->
+    
+    <div class="iTem" id="item1" style="display: none;">
+      <div class="container">
+        <div class="text-center">
+          <div class="h2">Timestamp Microservice</div>
+        </div>
+        <form class="form-horizontal" id="timestampForm">
+          <div class="form-group">
+            <div class="col-sm-offset-1 col-sm-10">
+              <input type="text" class="form-control" placeholder="Timestamp" name="timestamp">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-1 col-sm-10">
+              <button type="submit" class="btn btn-primary btn-block">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+        
+      <div class="container">
+        <div class="well text-center" id="receivedData">
+          <div id="jsonData"></div>
+        </div>
+      </div>
+        
+      <div class="container">
+        <div class="panel panel-default">
+          <div class="panel-heading">Example Usages</div>
+          <div class="panel-body">
+            <ul class="list-group">
+              <li class="list-group-item">
+                Enter timestamp in the <em>Input box</em> and press <em>Submit</em>
+              </li>
+              <li class="list-group-item">
+                Directly using url: 
+                <br/>
+                <strong>http://localhost:3000/api/time/<em>your-time-stamp</em></strong>
+              </li>
+            </ul>
+          </div>
+          <div class="panel-footer">&hearts; for all :)</div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">Timestamp Formats</div>
+          <div class="panel-body">
+            <ul class="list-group">
+              <li class="list-group-item">
+                12345678 [<em>range, &plusmn;8640000000000</em>]
+              </li>
+              <li class="list-group-item">
+                Dec 12, 2012
+              </li>
+              <li class="list-group-item">
+                Dec 12, 12
+              </li>
+              <li class="list-group-item">
+                December 12, 2012
+              </li>
+              <li class="list-group-item">
+                12-12-2012
+              </li>
+              <li class="list-group-item">
+                12-12-12
+              </li>
+              <li class="list-group-item">
+                12/12/2012
+              </li>
+              <li class="list-group-item">
+                12/12/12
+              </li>
+              <li class="list-group-item">
+                December 17, 1995 03:24:00
+              </li>
+              <li class="list-group-item">
+                1995-12-17T03:24:00
+              </li>
+              <li class="list-group-item">
+                1995, 11, 17
+              </li>
+            </ul>
+          </div>
+          <div class="panel-footer">&hearts; for all :)</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Request Header Parser Microservice -->
+    <div class="iTem" id="item2" style="display: none;">
+      <div class="container">
+        <div class="text-center">
+          <div class="h2">Request Header Parser Microservice</div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">Example Usages</div>
+          <div class="panel-body">
+            <ul class="list-group">
+              <li class="list-group-item">
+                Directly using url: 
+                <br/>
+                <strong>http://localhost:3000/api/<em>whoami</em></strong>
+              </li>
+            </ul>
+          </div>
+          <div class="panel-footer">&hearts; for all :)</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- URL Shortener Microservice -->
+    <div class="iTem" id="item3" style="display: none;">
+      <div class="container">
+        <div class="text-center">
+          <div class="h2">URL Shortener Microservice</div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">Example Usages</div>
+          <div class="panel-body">
+            <ul class="list-group">
+              <li class="list-group-item">
+                To shorten url, use - 
+                <br/>
+                <strong>http://localhost:3000/api/srt/add/<em>your-site-url</em></strong>
+              </li>
+              <li class="list-group-item">
+                To browse shortened url, use - 
+                <br/>
+                <strong>http://localhost:3000/api/srt/red/<em>your-shortened-url</em></strong>
+              </li>
+            </ul>
+          </div>
+          <div class="panel-footer">&hearts; for all :)</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Image Search Abstraction Layer -->
+    <div class="iTem" id="item4" style="display: none;">
+      <div class="container">
+        <div class="text-center">
+          <div class="h2">Image Search Abstraction Layer</div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">Example Usages</div>
+          <div class="panel-body">
+            <ul class="list-group">
+              <li class="list-group-item">
+                To get search result, use - 
+                <br/>
+                <strong>http://localhost:3000/api/img/search/<em>your-search-term</em>?offset=<em>numeric-offset-value</em></strong> 
+                <br/>
+                (<em>offset is optional</em>)
+              </li>
+              <li class="list-group-item">
+                To get latest searches, use - 
+                <br/>
+                <strong>http://localhost:3000/api/img/latest</strong>
+              </li>
+            </ul>
+          </div>
+          <div class="panel-footer">&hearts; for all :)</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- File Metadata Microservice -->
+    <div class="iTem" id="item5" style="display: none;">
+      <div class="container">
+        <div class="text-center">
+          <div class="h2">File Metadata Microservice</div>
+        </div>
+        <form class="form-horizontal" id="fileUpload"  enctype="multipart/form-data">
+          <div class="input-group">
+            <input type="file" class="form-control" placeholder="Timestamp" name="fileContainer" id="fileContainer">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="submit">Upload</button>
+            </span>
+          </div>
+        </form>
+        <div class="container">
+          <div class="well text-center receivedData">
+            <div id="fileJsonData"></div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">Example Usages</div>
+          <div class="panel-body">
+            <ul class="list-group">
+              <li class="list-group-item">
+                Upload the file, of which metadata is to be obtained.
+              </li>
+              <li class="list-group-item">
+                After successful upload the metadata will be displayed.
+              </li>
+            </ul>
+          </div>
+          <div class="panel-footer">&hearts; for all :)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div>
+    <footer>
+      <div class="footer-holder">
+        <div class="dev-prof">
+          Developed by: 
+          <a href="https://github.com/MarufSarker/" target="_blank"> Abu Md. Maruf Sarker</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  
+  <!--external js libraries-->
+  <script src="jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
