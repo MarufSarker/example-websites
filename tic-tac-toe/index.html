@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="author" href="humans.txt">
+
+	<title>Tic Tac Toe | Maruf Sarker</title>
+
+	<!-- Google Analytics - Starts -->
+	<script type="text/javascript">
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-73363148-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- Google Analytics - Ends -->
+
+	<!-- libraries -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!-- Custom Style-sheet and Script -->
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+</head>
+
+<body>
+	<div id="appBody" class="container">
+
+	<!-- app name -->
+	<div id="heading" class="text-center">
+		<p class="h1">Tic~Tac~Toe<br><small>General Tic Tac Toe Game</small></p>
+	</div>
+
+	<!-- user and AI status -->
+	<div id="statusUserAi">
+		<!-- user status -->
+		<div id="statusUser">
+			<div class="name text-center">YOU</div>
+			<div>
+				<div class="symbolText text-center">SYMBOL</div>
+				<div class="symbol uPS text-center">X</div>
+			</div>
+			<div>
+				<div class="resultText text-center">WON</div>
+				<div class="result uGW text-center">02</div>
+			</div>
+		</div>
+
+		<!-- AI status -->
+		<div id="statusAi">
+			<div class="name text-center">AI</div>
+			<div>
+				<div class="symbolText text-center">SYMBOL</div>
+				<div class="symbol aPS text-center">O</div>
+			</div>
+			<div>
+				<div class="resultText text-center">WON</div>
+				<div class="result aGW text-center">09</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- game control -->
+	<div id="controlUser" class="text-center">
+		<div id="controlSymbol">
+			<div class="selectedSymbol symX btn btn-default" value="X">X</div>
+			<div class="selectedSymbol symO btn btn-default" value="O">O</div>
+		</div>
+		<div id="controlMargin"></div>
+		<div id="controlMode">
+			<div class="selectedMode mdE btn btn-default" value="normalMode">EASY</div>
+			<div class="selectedMode mdN btn btn-default" value="expertMode">NORMAL</div>
+		</div>
+	</div>
+
+	<!-- game board -->
+	<div id="gameBoard" class="text-center">
+		<div>
+			<div class="boardBox btn btn-default text-center" value="0"></div>
+			<div class="boardBox btn btn-default text-center" value="1"></div>
+			<div class="boardBox btn btn-default text-center" value="2"></div>
+		</div>
+		<div>
+			<div class="boardBox btn btn-default text-center" value="3"></div>
+			<div class="boardBox btn btn-default text-center" value="4"></div>
+			<div class="boardBox btn btn-default text-center" value="5"></div>
+		</div>
+		<div>
+			<div class="boardBox btn btn-default text-center" value="6"></div>
+			<div class="boardBox btn btn-default text-center" value="7"></div>
+			<div class="boardBox btn btn-default text-center" value="8"></div>
+		</div>
+	</div>
+
+	<!-- pop-up messages -->
+	<div id="winContainer">
+		<div id="winClose" class="btn">X</div>
+		<div id="winMessage">You Win!!!</div>
+	</div>
+</div>
+
+
+	<div id="creator">
+		<div id="creatorID">Created by: <a href="https://github.com/MarufSarker/" target="_blank">Abu Md. Maruf Sarker</a></div>
+	</div>
+</body>
+</html>

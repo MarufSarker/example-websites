@@ -1,0 +1,206 @@
+#appBody {
+  width: 500px;
+}
+
+#heading {
+  width: 450px;
+  margin: 0 auto;
+  border-radius: 3px;
+  text-shadow: 0px 0px 1px #2D2D2D;
+  box-shadow: 2px 2px 2px #2D2D2D;
+  cursor: default;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+#statusUserAi {
+  margin: 0px auto;
+  cursor: default;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.symbolText, .symbol {
+  display: inline-block;
+}
+
+.resultText, .result {
+  display: inline-block;
+}
+
+#statusUser, #statusAi {
+  display: inline-block;
+  margin-left: 5em;
+}
+
+#statusAi {
+  margin-left: 6.3em;
+}
+
+.name, .symbolText, .resultText, .symbol, .result {
+  height: 26px;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 0px 0px 1px #2D2D2D;
+  margin-bottom: 5px;
+  border-radius: 3px;
+}
+
+.name {
+  background: #990099;
+  width: 120px;
+  color: #FFF;
+  box-shadow: 1px 2px 2px #2D2D2D, 0 0 1px gray inset;
+}
+
+.symbolText, .resultText {
+  background: #0066FF;
+  width: 85px;
+  color: #FFF;
+  box-shadow: 1px 2px 2px #2D2D2D, 0 0 1px gray inset;
+}
+
+.symbol, .result {
+  width: 25px;
+  margin-left: 5px;
+  color: #900;
+  box-shadow: 0 0 1px #2D2D2D, 0 0 1px gray inset;
+}
+
+#controlUser {
+  margin: 10px;
+  margin-left: 20px;
+}
+
+#controlSymbol, #controlMode, #controlMargin {
+  display: inline-block;
+}
+
+.selectedSymbol, .selectedMode {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  border: none;
+  box-shadow: 1px 1px 2px 2px #000000, 1px 1px 2px 1px #000000 inset;
+}
+
+#controlMargin {
+  height: 100%;
+  font-size: 150%;
+  margin: auto 15px;
+  opacity: 0.7;
+}
+
+#gameBoard {
+  width: 365px;
+  height: 365px;
+  background: #CC00CC;
+  padding-top: 10px;
+  border-radius: 10px;
+  margin-left: 50px;
+  box-shadow: 1px 1px 2px 2px #000000, 1px 1px 2px 2px #000000 inset;
+}
+
+.boardBox {
+  width: 2em;
+  height: 2em;
+  margin-bottom: 0.05em;
+  padding-top: 0.3em;
+  font-weight: bold;
+  font-size: 4em;
+  font-family: Lobster, cursive;
+  box-shadow: 1px 1px 2px 2px #000000 inset;
+  border: none;
+}
+
+#winContainer {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  margin: -20em auto auto auto;
+  z-index: 10;
+}
+
+#winClose {
+  float: right;
+  margin: -10px -10px auto auto;
+  border: 0px solid blue;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.6em;
+  background: #FFF;
+  color: #2D2D2D;
+  box-shadow: 0px 0px 3px blue, 0px 0px 10px blue inset;
+  padding: 1px 0px;
+}
+
+#winMessage {
+  width: 7em;
+  height: 3em;
+  background: #fff;
+  text-align: center;
+  font-size: 3em;
+  padding: 0.7em;
+  box-shadow: 0px 0px 3px #2D2D2D, 0px 0px 5px #2D2D2D inset;
+}
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #appBody {
+      width: 400px;
+    }
+
+    #heading {
+      width: 300px;
+    }
+
+    #statusUser{
+      margin-left: 2.3em;
+    }
+
+    #statusAi {
+      margin-left: 4.3em;
+    }
+
+    #gameBoard {
+      width: 310px;
+      height: 300px;
+      margin-left: 30px;
+    }
+    .boardBox {
+      font-size: 3.3em;
+    }
+
+    #winContainer {
+      margin: -17em auto auto auto;
+    }
+    #winClose {
+      padding: 2px 0px;
+    }
+  }
+
+
+#creator {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#creatorID, #creatorID a {
+  color: #FF33CC;
+  font-weight: bold;
+  text-shadow: 1px 1px 0px #2D2D2D;
+}

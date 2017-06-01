@@ -1,0 +1,22 @@
+# Tic Tac Toe
+![Tic Tac Toe by Maruf Sarker](img/tic-tac-toe-preview.png)
+
+## Simple Tic Tac Toe Game
+
+This is a simple Tic Tac Toe Game.
+
+There are two modes of the game.
+- **Easy Mode**
+- **Normal Mode**
+
+##Easy Mode
+
+Easy Mode is where your AI (computing device) put its marks Randomly without considering your moves.
+
+Easy mode, as its name, is easier to Win, harder to lose!
+
+##Normal Mode
+
+Normal Mode is where your AI (computing device) put its marks considering your moves. AI tries to follow Minimax Algorithm.
+
+Normal Mode is a bit harder than Easy Mode, and fairly harder to Win and, Easy to Draw and, Easier to Lose!
